@@ -23,8 +23,8 @@ public class CitaMedica {
     //ManyToOne Paciente
     @ManyToOne(fetch = FetchType.EAGER)
 	//EAGER carga automaticamente las relaciones LAZY cuando ud. la quiere consumir
-	@JoinColumn(name="paciente_id") //PK de la otra entidad, en este caso en cliente se llama id
-    //un cliente puede tener muchas compras, pero las compras estaran asociadas a un cliente
+	@JoinColumn(name="paciente_id") //PK de la otra entidad, en este caso en paciente se llama id
+    //un paciente puede tener muchas citas, pero las citas estaran asociadas a un paciente
     private Paciente paciente;
 
 
